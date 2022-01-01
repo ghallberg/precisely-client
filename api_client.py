@@ -4,7 +4,13 @@ import os
 from dotenv import load_dotenv
 from io import open
 
-#TODO: Move config-handling to module/class if needed
+# TODO: Rate-limit handling (waiting until X-Ratelimit-Reset when X-Ratelimit-Remaining is 0)
+#       Not needed with a single org, with few docs.
+# TODO: Verify responses with openapi?
+# TODO: Move functions into module/class for readability
+# TODO: General error handling and nicer error messages
+
+# TODO: Move config-handling to module/class if needed
 load_dotenv()
 
 BASE_URL = os.getenv("BASE_URL")
@@ -12,10 +18,6 @@ USER_NAME = os.getenv("USER_NAME")
 PASSWORD = os.getenv("PASSWORD")
 OUTPUT_FOLDER = os.getenv("OUTPUT_FOLDER")
 
-# TODO: Rate-limit handling (waiting until X-Ratelimit-Reset when X-Ratelimit-Remaining is 0)
-#       Not needed with a single org, with few docs.
-# TODO: Verify responses with openapi?
-# TODO: Move functions into module/class for readability
 
 
 def get_auth_header():
