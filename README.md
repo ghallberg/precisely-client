@@ -9,6 +9,9 @@ Proof of concept api-client for the Precisely API
 * Python 3
 * Poetry [https://python-poetry.org/]
 
+#### Optional:
+* make (you can use the raw poetry commands if you don't have make available too you, see Makefile)
+
 ### Installing
 
 * make install
