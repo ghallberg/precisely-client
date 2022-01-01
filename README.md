@@ -16,4 +16,4 @@ Proof of concept api-client for the Precisely API
 
 ### Executing program
 
-* poetry run
+* make run
